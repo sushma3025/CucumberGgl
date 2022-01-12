@@ -31,6 +31,9 @@ public class Search
 	@Then("^Verify user Successfully Logged in$")
 	public void verify_user_Successfully_Logged_in() throws Throwable 
 	{ searchpage.verify();
+	searchpage.search();
+
+	
 	}
 }
 
