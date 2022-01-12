@@ -21,11 +21,19 @@ public class Search
 	{    
 			searchpage.search();
 	}
+	@When("^ User clicks on Login Button$")
+	public void user_clicksonLogin_to_Application() throws Throwable 
+	{    
+			searchpage.search();
+	}
 	
 
 	@Then("^Verify user Successfully Logged in$")
 	public void verify_user_Successfully_Logged_in() throws Throwable 
 	{ searchpage.verify();
+	searchpage.search();
+
+	
 	}
 }
 
